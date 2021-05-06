@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.4.30)  4 MAY 2021 17:17
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.4.30)  6 MAY 2021 11:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1060,63 +1060,63 @@ LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
 (Font)              scaled to size 4.99947pt on input line 121.
 [1
 
-] [1] [2] [3] [4] [5] [6] [7]
+] [1] [2] [3] [4] [5] [6] [7] [8]
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 8.4pt on input line 193.
+(Font)              scaled to size 8.4pt on input line 195.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 6.0pt on input line 193.
+(Font)              scaled to size 6.0pt on input line 195.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 8.40076pt on input line 193.
+(Font)              scaled to size 8.40076pt on input line 195.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 6.00055pt on input line 193.
+(Font)              scaled to size 6.00055pt on input line 195.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 8.3991pt on input line 193.
+(Font)              scaled to size 8.3991pt on input line 195.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 5.99936pt on input line 193.
+(Font)              scaled to size 5.99936pt on input line 195.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[8] [9]
+[9] [10]
 File: theory_paper_files/figure-latex/mef1-c-1.pdf Graphic file (type pdf)
 <use theory_paper_files/figure-latex/mef1-c-1.pdf>
-[10] [11]
+[11]
 File: theory_paper_files/figure-latex/mef2-c-1.pdf Graphic file (type pdf)
 <use theory_paper_files/figure-latex/mef2-c-1.pdf>
-[12]
+[12] [13]
 File: theory_paper_files/figure-latex/mef3-c-1.pdf Graphic file (type pdf)
 <use theory_paper_files/figure-latex/mef3-c-1.pdf>
-[13] [14] [15]
-Underfull \hbox (badness 10000) in paragraph at lines 301--303
+[14] [15] [16]
+Underfull \hbox (badness 10000) in paragraph at lines 309--311
 []$[][][][][] [] [] [] [][][] [] [][][][] [] [][][] [] [][][][] [] [][] [] [][]
  [] [][][][][] [][] [][][][] [][] [][][][][] [][] [][][][] [][] [][][][][][][][
 ][] [][] [][][][] [][] [][][][][][][][][] [][]
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 316--318
+[17]
+Underfull \hbox (badness 10000) in paragraph at lines 324--326
 [][] [] [][][][][][][][][] [] [][][][] [][] [][][][][][][][][][][] [][] [][][][
 ][][][] [][] [][][][][][][] [][] [][][][][] [][] [][][][][] [][] [][] [][] [][]
 [][][][][][][] [][] [][][][][][] [][] [][] [][]
  []
 
-[16]
-Overfull \hbox (4.58919pt too wide) in paragraph at lines 328--330
+[18]
+Overfull \hbox (4.58919pt too wide) in paragraph at lines 351--353
 [][][][][][][][][][][] [][] [][][][][][][][][][] [][] [][][][][] [][] [][][][][
 ][][][] [][] [][][][][][][][] [] [][][][][][][][][][][][][][][][][][][][][][][]
 [][][][]$[]\TU/lmr/m/n/12 . 
  []
 
-[17] [18] (./theory_paper.aux)
+[19] (./theory_paper.aux)
 Package rerunfilecheck Info: File `theory_paper.out' has not changed.
 (rerunfilecheck)             Checksum: 05601A301B9180C8E802162A0D01BFD4;747.
  ) 
 Here is how much of TeX's memory you used:
- 17745 strings out of 478918
- 314654 string characters out of 5864899
- 790292 words of memory out of 5000000
- 37317 multiletter control sequences out of 15000+600000
+ 17746 strings out of 478918
+ 314664 string characters out of 5864899
+ 788264 words of memory out of 5000000
+ 37318 multiletter control sequences out of 15000+600000
  408605 words of font info for 76 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 98i,12n,122p,1619b,498s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 98i,12n,122p,2009b,498s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on theory_paper.pdf (19 pages).
+Output written on theory_paper.pdf (20 pages).

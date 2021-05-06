@@ -209,7 +209,7 @@ vp1 <- filter(vp, group %in% c(5, 6, 7)) %>%
 vp1$group <- factor(vp1$group, levels = c("Somewhat Convervative", "Conservative", "Very Conservative"))
 
 fig <- ggplot(data = filter(vp1, response.level == "Did.not.vote")) +
-  facet_grid(response.level ~ type) +
+  facet_grid( ~ type) +
   geom_line(aes(x = as.integer(x)-1, y = predicted, color = group)) +
   geom_errorbar(aes(x = as.integer(x)-1, ymin = conf.low, ymax = conf.high, color = group), width = 0.05) +
   scale_color_manual(values = c("black", "purple", "goldenrod")) +
