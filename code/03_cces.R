@@ -1,8 +1,11 @@
 
 cces <- fread("../regular_data/cces/CCES20_Common_OUTPUT.csv") %>% 
   mutate(diagnosed = CC20_309a_5 == 2,
+         diagnosed_close = CC20_309a_1 == 1 | CC20_309a_2 == 1,
+         died_close = (CC20_309b_2 == 1) * 1,
          died = CC20_309b_4 == 2,
-         died = ifelse(is.na(died), 0, died)) %>% 
+         died = ifelse(is.na(died), 0, died),
+         died_close = ifelse(is.na(died_close), 0, died_close)) %>% 
   select(ideo = CC20_340a,
          pid7,
          approval = CC20_320a,
@@ -13,6 +16,8 @@ cces <- fread("../regular_data/cces/CCES20_Common_OUTPUT.csv") %>%
          diagnosed,
          faminc_new,
          died,
+         died_close,
+         diagnosed_close,
          voted = CC20_401,
          commonpostweight,
          party = CC20_433a,
@@ -182,7 +187,9 @@ saveRDS(p1, "temp/multi_out.rds")
 #####
 reps <- cces %>%
   filter(!is.na(commonpostweight)) %>%
-  mutate(ideo = factor(ideo))
+  mutate(ideo = factor(ideo),
+         died_close = as.integer(died_close),
+         diagnosed_close = as.integer(diagnosed_close))
 
 reps$race <- relevel(factor(reps$race), ref = "White")
 
@@ -207,6 +214,7 @@ vp1 <- filter(vp, group %in% c(5, 6, 7)) %>%
                        ifelse(group == 6, "Conservative", "Very Conservative")))
 
 vp1$group <- factor(vp1$group, levels = c("Somewhat Convervative", "Conservative", "Very Conservative"))
+
 
 fig <- ggplot(data = filter(vp1, response.level == "Did.not.vote")) +
   facet_grid( ~ type) +
