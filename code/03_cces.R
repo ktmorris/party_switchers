@@ -126,6 +126,12 @@ cces$action <- with(cces,
                                     (pres_choice == 2 & grepl("Dem", pid7)), "Vote for Other",
                                   "Vote for Candidate")))
 
+cces$vb <- cces$pres_choice == 1
+
+cces$action2 <- with(cces,
+                    ifelse(!voted, "Did not vote",
+                           ifelse(vb, "Voted for Biden", "Voted for Other")))
+
 
 cces$action <- factor(cces$action, levels = c("Vote for Candidate", "Did not vote", "Vote for Other"))
 cces$diagnosed <- factor(cces$diagnosed)
@@ -184,6 +190,9 @@ p1 <- ggplot(data = filter(vp, response.level %in% c("Vote for Other", "Did not 
        caption = "Note: Covariates include age; gender; education; income; 7-point political ideology; race / ethnicity.")
 p1
 saveRDS(p1, "temp/multi_out.rds")
+
+
+stargazer(m2, type = "text")
 #####
 reps <- cces %>%
   filter(!is.na(commonpostweight)) %>%
